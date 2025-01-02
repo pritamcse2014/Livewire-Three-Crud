@@ -33,7 +33,10 @@
                     <span class="text-danger">{{ $message }}</span> @enderror
                 </div>
             </div>
-            <button class="btn btn-primary" type="submit">Save</button>
+            <div class="d-flex">
+                <button class="btn btn-primary" type="submit">Save</button>
+                <button wire:navigate href="/customers" class="btn btn-secondary ms-auto">Back</button>
+            </div>
         </form>
     </div>
 </div>
