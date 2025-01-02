@@ -9,6 +9,7 @@
     </head>
     <body>
         <div class="container mt-5">
+            <livewire:nav-bar />
             {{ $slot }}
         </div>
     </body>

@@ -1,30 +1,14 @@
 {{--
 <div>
-    In work, do what you enjoy.
+    Be like water.
 </div> --}}
 
 <div class="card offset-3 col-6">
     <div class="card-header">
-        Registration
+        Login
     </div>
     <div class="card-body">
         <form action="" wire:submit="store">
-            <div class="mb-3">
-                <label class="form-label" for="">Name</label>
-                <input class="form-control" wire:model="name" type="text" name="name" id="name">
-                <div>
-                    @error('name')
-                    <span class="text-danger">{{ $message }}</span> @enderror
-                </div>
-            </div>
-            <div class="mb-3">
-                <label class="form-label" for="">Phone</label>
-                <input class="form-control" wire:model="phone" type="tel" name="phone" id="phone">
-                <div>
-                    @error('phone')
-                    <span class="text-danger">{{ $message }}</span> @enderror
-                </div>
-            </div>
             <div class="mb-3">
                 <label class="form-label" for="">Email</label>
                 <input class="form-control" wire:model="email" type="email" name="email" id="email">
@@ -41,10 +25,11 @@
                     <span class="text-danger">{{ $message }}</span> @enderror
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Login</button>
         </form>
     </div>
     <div class="card-footer text-body-secondary d-flex">
-        Already have an account <button wire:navigate href="/login" class="btn btn-success btn-sm ms-auto">Login</button>
+        New account create
+        <button wire:navigate href="/registration" class="btn btn-success btn-sm ms-auto">Registration</button>
     </div>
 </div>
