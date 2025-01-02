@@ -5,8 +5,9 @@
 
 <div>
     <div class="d-flex">
-        <button wire:navigate href="customers/create" class="btn btn-primary btn-sm ms-auto">Create</button>
+        <button wire:navigate href="customers/create" class="btn btn-primary btn-sm ms-auto mb-2">Create</button>
     </div>
+    <livewire:flash-message />
     <table class="table">
         <thead>
             <tr>
@@ -25,7 +26,7 @@
                 <td>{{ $value->email }}</td>
                 <td>{{ $value->phone }}</td>
                 <td>
-                    <button class="btn btn-success btn-sm">Edit</button>
+                    <button wire:navigate href="/customers/edit/{{ $value->id }}" class="btn btn-success btn-sm">Edit</button>
                     <button wire:navigate href="/customers/view/{{ $value->id }}" class="btn btn-primary btn-sm">View</button>
                     <button class="btn btn-danger btn-sm">Delete</button>
                 </td>
