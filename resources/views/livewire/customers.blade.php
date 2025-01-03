@@ -5,6 +5,7 @@
 
 <div>
     <div class="d-flex">
+        <input class="form-control w-25 mb-2" wire:model.live.debounce.150ms="search" type="text" name="search" id="search" placeholder="Search">
         <button wire:navigate href="customers/create" class="btn btn-primary btn-sm ms-auto mb-2">Create</button>
     </div>
     <livewire:flash-message />
